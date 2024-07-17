@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.pixlove.android",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ],
+      "versionCode": 1
+    },
+    "name": "Pixllove",
+    "slug": "app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "jsEngine": "hermes",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "owner": "19michael9",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain"
+
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        "expo-secure-store"
+
+      ]
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ed3e613d-846d-4cc7-b947-89e99894f465"
+      }
+    },
+    // "sdkVersion": "49.0.0",
+    "runtimeVersion": "49.0.0"
+    //"entryPoint": ".vscode\\exponentIndex.js"
+  },
+  "name": "Pixllove"
+}
