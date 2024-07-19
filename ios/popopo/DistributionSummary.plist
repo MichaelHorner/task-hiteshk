@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TritTrot.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>808C90039E0A163D3E7E5C65DFDA01D9521A2C72</string>
+				<key>dateExpires</key>
+				<string>03/03/2025</string>
+				<key>type</key>
+				<string>Cloud Managed Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>0.12.0</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>808C90039E0A163D3E7E5C65DFDA01D9521A2C72</string>
+						<key>dateExpires</key>
+						<string>03/03/2025</string>
+						<key>type</key>
+						<string>Cloud Managed Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>hermes.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>9FMR56X74S</string>
+						<key>name</key>
+						<string>Max Oyston</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>0.12.0</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>9FMR56X74S.com.trittrot</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.applesignin</key>
+				<array>
+					<string>Default</string>
+				</array>
+				<key>com.apple.developer.associated-domains</key>
+				<array>
+					<string>applinks:trittrot.page.link</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>9FMR56X74S</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array/>
+			</dict>
+			<key>name</key>
+			<string>TritTrot.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>79e361d1-5fe8-4341-9a13-286a7b2ce0d6</string>
+				<key>dateExpires</key>
+				<string>15/04/2025</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.trittrot</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>9FMR56X74S</string>
+				<key>name</key>
+				<string>Max Oyston</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>2.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

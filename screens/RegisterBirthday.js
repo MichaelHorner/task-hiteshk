@@ -31,27 +31,27 @@ const RegisterBirthday = ({ navigation }) => {
   const currentLanguage = sessionData.currentLanguage || 'en';
   const t = languages[currentLanguage];
 
-  useEffect(() => {
-    try {
-      userToRegister = JSON.parse(sessionData.userToRegister);
-    } catch (e) {
-      console.error("Parsing error:", e);
-    }
+  // useEffect(() => {
+  //   try {
+  //     userToRegister = JSON.parse(sessionData.userToRegister);
+  //   } catch (e) {
+  //     console.error("Parsing error:", e);
+  //   }
 
-    const keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', (e) => {
-      setKeyboardHeight(e.endCoordinates.height);
-      setIsKeyboardVisible(true);
-    });
-    const keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', () => {
-      setKeyboardHeight(0);
-      setIsKeyboardVisible(false);
-    });
+  //   const keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', (e) => {
+  //     setKeyboardHeight(e.endCoordinates.height);
+  //     setIsKeyboardVisible(true);
+  //   });
+  //   const keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', () => {
+  //     setKeyboardHeight(0);
+  //     setIsKeyboardVisible(false);
+  //   });
 
-    return () => {
-      keyboardDidShowListener.remove();
-      keyboardDidHideListener.remove();
-    };
-  }, []);
+  //   return () => {
+  //     keyboardDidShowListener.remove();
+  //     keyboardDidHideListener.remove();
+  //   };
+  // }, []);
 
   const updateDay = (value) => {
     if (/^\d{0,2}$/.test(value) && (value === '' || parseInt(value, 10) >= 1 && parseInt(value, 10) <= 31 || value === '0')) {
@@ -132,9 +132,9 @@ const RegisterBirthday = ({ navigation }) => {
   };
 
   const isButtonCovered = () => {
-    console.log("Button" +buttonY);
+    console.log("Button" + buttonY);
     console.log(Dimensions.get('window').height - keyboardHeight)
-    return buttonY  < Dimensions.get('window').height - keyboardHeight; 
+    return buttonY < Dimensions.get('window').height - keyboardHeight;
   };
 
   let isDateValid = day && month && year && year.length === 4;
@@ -146,7 +146,7 @@ const RegisterBirthday = ({ navigation }) => {
         <Image source={require('../assets/Logo.png')} style={styles.logoStyle} />
       </View>
       <View style={styles.contentContainer}>
-        <HorizontalContainer navigation={navigation} initValue={28} value={34} />
+        {/* <HorizontalContainer navigation={navigation} initValue={28} value={34} /> */}
         <Text style={[styles.textLeftAlign, { marginLeft: 8 }]}>{t.birthdayHeader}</Text>
         <View style={styles.textContainer}>
           <Text style={[styles.textLeftAlignSmall, { marginLeft: 8, marginTop: 15 }]}>
