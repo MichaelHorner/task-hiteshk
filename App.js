@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusBar } from 'react-native';
+import { AppRegistry, StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Provider } from 'react-redux';
@@ -21,39 +21,39 @@ export default function App() {
         <Provider store={store}>
             <SessionDataProvider>
                 <NavigationContainer>
-                    <Stack.Navigator 
-                        initialRouteName="SplashScreen" 
+                    <Stack.Navigator
+                        initialRouteName="SplashScreen"
                         screenOptions={{
-                            headerStatusBarHeight: StatusBar.currentHeight, 
-                            statusBarHidden: false, 
+                            headerStatusBarHeight: StatusBar.currentHeight,
+                            statusBarHidden: false,
                             statusBarStyle: 'light-content',
-                            statusBarColor: 'rgba(0, 0, 0, 1)', 
+                            statusBarColor: 'rgba(0, 0, 0, 1)',
                             animation: 'none',
-                            headerTransparent: true, 
+                            headerTransparent: true,
                         }}
                     >
                         <Stack.Screen
                             name="SplashScreen"
                             component={SplashScreen}
                             options={{ headerShown: false, statusBarHidden: true }}
-                        /> 
+                        />
                         <Stack.Screen
                             name="Start"
                             component={Start}
                             options={{ headerShown: false }}
                         />
-                        <Stack.Screen 
-                            name="Register" 
-                            component={Register}  
-                            options={{ headerShown: false }} 
+                        <Stack.Screen
+                            name="Register"
+                            component={Register}
+                            options={{ headerShown: false }}
                         />
-                        <Stack.Screen 
-                            name="RegisterBirthday" 
-                            component={RegisterBirthday}  
-                            options={{ headerShown: false }} 
+                        <Stack.Screen
+                            name="RegisterBirthday"
+                            component={RegisterBirthday}
+                            options={{ headerShown: false }}
                         />
                     </Stack.Navigator>
-                </NavigationContainer>    
+                </NavigationContainer>
             </SessionDataProvider>
         </Provider>
     );
