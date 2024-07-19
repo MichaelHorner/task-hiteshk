@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Pressable, Image } from 'react-native';
-import CircularProgress from 'react-native-circular-progress-indicator';
+// import CircularProgress from 'react-native-circular-progress-indicator';
 
 const HorizontalContainer = ({
   navigation,
@@ -35,7 +35,7 @@ const HorizontalContainer = ({
       )}
       <View style={{ flex: 2.2 }} />
       <View style={styles.circularProgressContainer}>
-        {visible && (
+        {/* {visible && (
           <CircularProgress
             initialValue={initValue}
             value={value}
@@ -44,7 +44,7 @@ const HorizontalContainer = ({
             inActiveStrokeColor={'#808080'}
             valueSuffix={'%'}
           />
-        )}
+        )} */}
       </View>
     </View>
   );

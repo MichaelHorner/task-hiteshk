@@ -1039,7 +1039,9 @@ PODS:
     - React-Core
   - RNDeviceInfo (11.1.0):
     - React-Core
-  - RNGestureHandler (2.12.1):
+  - RNGestureHandler (2.17.1):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
     - React-Core
   - RNPermissions (3.10.1):
     - React-Core
@@ -1312,7 +1314,7 @@ SPEC CHECKSUMS:
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
   RNCPicker: 3e2c37a8328f368ce14da050cdc8231deb5fc9f9
   RNDeviceInfo: b899ce37a403a4dea52b7cb85e16e49c04a5b88e
-  RNGestureHandler: c0d04458598fcb26052494ae23dda8f8f5162b13
+  RNGestureHandler: 8ff45d9b814f3ceceb1e9f92e5c73c92ab98e4a2
   RNPermissions: 4e3714e18afe7141d000beae3755e5b5fb2f5e05
   RNScreens: 136d868cc4a78b41042a1a5f1cb42b99a47033f5
   RNSVG: 43b64ed39c14ce830d840903774154ca0c1f27ec
@@ -1320,6 +1322,6 @@ SPEC CHECKSUMS:
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: d17d2cc8105eed528474683b42e2ea310e1daf61
 
-PODFILE CHECKSUM: dc26573f6d1e76aa9bec8e9b99c60a2827e93ac3
+PODFILE CHECKSUM: c04aa2e521d5f3a11049cab211e76d3fcfac1cca
 
 COCOAPODS: 1.15.2
