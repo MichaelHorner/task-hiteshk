@@ -5905,11 +5905,6 @@ react-native-gesture-handler@^2.12.1:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-react-native-image-picker@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-5.7.0.tgz#3c146550bc89daddfca2fe123aaa0c753b58a5e2"
-  integrity sha512-LGBrFQzKEAt/u4z+IcY7COZA7N6lCeLQ2dMu1PubK10+d9YBRS8n/ABNj48CJhEpUhcRPt7H3iWbwIuOlcZrDA==
-
 react-native-international-phone-number@^0.4.15:
   version "0.4.15"
   resolved "https://registry.yarnpkg.com/react-native-international-phone-number/-/react-native-international-phone-number-0.4.15.tgz#f6c21c2c846a3183c214ba2cd840d1250ee1cff9"

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "android": "react-native run-android --terminal powershell",
-    "ios": "react-native run-ios --terminal terminal",
+    "android": "react-native run-android --terminal terminal",
+    "ios": "react-native run-ios --simulator='iPhone 11'",
     "start": "react-native start",
     "androidClean": "cd android && ./gradlew clean && cd ..",
     "install": "cd ios && pod install --allow-root && cd ..",
@@ -35,7 +35,6 @@
     "react-native-device-info": "^11.1.0",
     "react-native-draggable-flatlist": "^4.0.1",
     "react-native-gesture-handler": "^2.12.1",
-    "react-native-image-picker": "^5.7.0",
     "react-native-international-phone-number": "^0.4.15",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-navigation-bar-color": "^2.0.2",
